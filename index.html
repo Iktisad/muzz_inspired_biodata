@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iktisad's Biodata Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="./src/output.css" /> -->
+    <style>
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+      .scrollbar-hide {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 min-h-screen">
+    <!-- Full-Screen Background Image -->
+    <div
+      class="relative w-full h-screen bg-cover bg-center"
+      style="background-image: url('./imgs/image-1.png')"
+    >
+      <!-- Profile Details inside Translucent Pills -->
+      <div class="absolute bottom-6 left-6 z-10 space-y-2">
+        <div
+          class="bg-gray-800 bg-opacity-50 text-white px-3 py-1.5 rounded-full text-base font-bold shadow-md"
+        >
+          Iktisad Rashid <span id="age" class="font-normal text-sm"></span>
+        </div>
+
+        <div
+          class="bg-gray-800 bg-opacity-50 text-white px-3 py-1.5 rounded-full text-sm font-medium shadow-md flex items-center gap-2 w-fit"
+        >
+          <img src="./svg/canada.svg" alt="canada" class="w-4 h-4" />
+          <span>Montreal</span>
+        </div>
+
+        <div class="flex space-x-2">
+          <div
+            class="bg-gray-800 bg-opacity-50 text-white px-3 py-1.5 rounded-full text-sm font-medium shadow-md flex items-center gap-2 w-fit"
+          >
+            <img src="./svg/work.svg" alt="work" class="w-4 h-4" />
+            <span>Software Engineer</span>
+          </div>
+
+          <div
+            class="bg-gray-800 bg-opacity-50 text-white px-3 py-1.5 rounded-full text-sm font-medium shadow-md flex items-center gap-2 w-fit"
+          >
+            <img src="./svg/halfmoon.svg" alt="halfmoon" class="w-4 h-4" />
+            <span>Practicing</span>
+          </div>
+        </div>
+
+        <div
+          class="bg-gray-800 bg-opacity-50 text-white px-3 py-1.5 rounded-full text-sm font-medium shadow-md flex items-center gap-2 w-fit"
+        >
+          <img src="./svg/bangladesh.svg" alt="bangladesh" class="w-4 h-4" />
+          <span>Bangladeshi</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quotation Banner Section -->
+    <div class="p-8 max-w-2xl w-full mx-auto mt-4">
+      <div
+        class="relative bg-white border-l-4 border-rose-400 p-6 rounded-md shadow-md"
+      >
+        <span
+          class="absolute top-2 left-4 text-4xl text-gray-300 font-serif select-none"
+          >“</span
+        >
+        <p class="text-gray-700 italic text-lg pl-6">
+          Not perfect, but striving with purpose.
+        </p>
+      </div>
+    </div>
+
+    <!-- About Me Section with Left-Aligned Pills (No Card) -->
+    <div class="p-8 max-w-lg w-full mx-auto mt-10 relative overflow-hidden">
+      <h3 class="text-xl font-bold text-gray-700 border-b pb-2">About Me</h3>
+      <div class="flex flex-wrap justify-start gap-2 mt-4">
+        <div
+          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+        >
+          <img src="./svg/height.svg" alt="height" class="w-5 h-5" />
+          <span>168cm(5'6")</span>
+        </div>
+        <div
+          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+        >
+          <img src="./svg/ring.svg" alt="ring" class="w-5 h-5" />
+          <span>Never Married</span>
+        </div>
+        <div
+          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+        >
+          <img
+            src="./svg/hijri-calendar.svg"
+            alt="hijri-calendar"
+            class="w-5 h-5"
+          />
+          <span>Muslim</span>
+        </div>
+        <div
+          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+        >
+          <img src="./svg/child.svg" alt="child" class="w-5 h-5" />
+          <span>Doesn't have children</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Marriage Timeline Section -->
+    <div
+      class="p-6 max-w-lg w-full mx-auto mt-10 bg-gray-50 rounded-xl shadow-md"
+    >
+      <h3 class="text-xl font-bold text-gray-800 mb-4">Marriage Intentions</h3>
+
+      <div class="relative flex flex-col items-center">
+        <div class="w-full h-1 bg-gray-300 rounded-full relative">
+          <div
+            class="absolute left-0 h-1 bg-gradient-to-r from-pink-500 to-black rounded-full w-2/5"
+          ></div>
+        </div>
+        <div class="flex justify-between items-center w-full mt-3">
+          <div class="text-center flex flex-col items-center">
+            <div
+              class="bg-pink-500 text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center space-x-2"
+            >
+              <img src="./svg/heart.svg" alt="match" class="w-5 h-5" />
+              <span>Match</span>
+            </div>
+            <p class="text-gray-500 text-xs mt-1">Starting Point</p>
+          </div>
+          <div class="text-center flex flex-col items-center">
+            <div
+              class="bg-black text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center space-x-2"
+            >
+              <img src="./svg/messages.svg" alt="messages" class="w-5 h-5" />
+              <span>Chatting</span>
+            </div>
+            <p class="text-gray-500 text-xs mt-1">1-2 months</p>
+          </div>
+          <div class="text-center flex flex-col items-center">
+            <div
+              class="bg-black text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center space-x-2"
+            >
+              <img src="./svg/parents.svg" alt="parents" class="w-5 h-5" />
+              <span>Family</span>
+            </div>
+            <p class="text-gray-500 text-xs mt-1">Agree together</p>
+          </div>
+          <div class="text-center flex flex-col items-center">
+            <div
+              class="bg-black text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center space-x-2"
+            >
+              <img src="./svg/marriage.svg" alt="marriage" class="w-4 h-4" />
+              <span>Marriage</span>
+            </div>
+            <p class="text-gray-500 text-xs mt-1">1-2 years</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional Photo Section (Full Width) -->
+    <div class="mt-10 w-full">
+      <img
+        src="./imgs/image-2.jpg"
+        alt="image-2"
+        class="w-full h-auto object-cover"
+      />
+    </div>
+
+    <!-- Religiosity -->
+    <div class="p-8 max-w-lg w-full mx-auto mt-10">
+      <h3 class="text-xl font-bold text-gray-800 border-b pb-2">Religiosity</h3>
+      <div class="flex flex-wrap justify-start gap-2 mt-4">
+        <div
+          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+        >
+          <img src="./svg/halfmoon-2.svg" alt="halfmoon-2" class="w-5 h-5" />
+          <span>Practicing</span>
+        </div>
+        <div
+          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+        >
+          <img src="./svg/hands.svg" alt="hands" class="w-5 h-5" />
+          <span>Always prays</span>
+        </div>
+        <div
+          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+        >
+          <img src="./svg/food.svg" alt="food" class="w-5 h-5" />
+          <span>Only Eats Halal</span>
+        </div>
+        <div
+          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+        >
+          <img src="./svg/smoking.svg" alt="smoking" class="w-5 h-5" />
+          <span>Non-Smoker</span>
+        </div>
+        <div
+          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+        >
+          <img src="./svg/alcohol.svg" alt="alcohol" class="w-5 h-5" />
+          <span>Doesn't drink</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional Photo Section (Full Width) -->
+    <div class="mt-10 w-full">
+      <img
+        src="./imgs/image-3.png"
+        alt="image-3"
+        class="w-full h-auto object-cover"
+      />
+    </div>
+
+    <!-- Future Plans -->
+    <div class="p-8 max-w-lg w-full mx-auto mt-10">
+      <h3 class="text-xl font-bold text-gray-800 border-b pb-2">
+        Future Plans
+      </h3>
+      <div class="flex flex-wrap justify-start gap-2 mt-4">
+        <div
+          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+        >
+          <img src="./svg/child.svg" alt="child" class="w-5 h-5" />
+          <span>Wants children</span>
+        </div>
+        <div
+          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+        >
+          <img src="./svg/plane.svg" alt="plane" class="w-5 h-5" />
+          <span>Will move abroad</span>
+        </div>
+        <div
+          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+        >
+          <img src="./svg/home.svg" alt="home" class="w-5 h-5" />
+          <span>Will get our own place</span>
+        </div>
+      </div>
+    </div>
+    <!-- Additional Photo Section (Full Width) -->
+    <div class="mt-10 w-full">
+      <img
+        src="./imgs/image-4.png"
+        alt="image-4"
+        class="w-full h-auto object-cover"
+      />
+    </div>
+
+    <!-- Interests -->
+    <div class="p-8 max-w-lg w-full mx-auto mt-10">
+      <h3 class="text-xl font-bold text-gray-800 border-b pb-2">Interests</h3>
+      <div class="flex flex-wrap justify-start gap-2 mt-4">
+        <div
+          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+        >
+          <span>🍿</span>
+          <span>Anime</span>
+        </div>
+        <div
+          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+        >
+          <span>👨‍💻</span>
+          <span>Coding</span>
+        </div>
+        <div
+          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+        >
+          <span>👨‍🍳</span>
+          <span>Cooking</span>
+        </div>
+        <div
+          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+        >
+          <span>💻</span>
+          <span>Tech</span>
+        </div>
+        <div
+          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+        >
+          <span>🧠</span>
+          <span>Politics</span>
+        </div>
+        <div
+          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+        >
+          <span>🥾</span>
+          <span>Hiking</span>
+        </div>
+        <div
+          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+        >
+          <span>👾</span>
+          <span>Video Games</span>
+        </div>
+        <div
+          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+        >
+          <span>🥋</span>
+          <span>Martial Arts</span>
+        </div>
+      </div>
+    </div>
+    <!-- Personality -->
+    <div class="p-8 max-w-lg w-full mx-auto mt-10">
+      <h3 class="text-xl font-bold text-gray-800 border-b pb-2">Personality</h3>
+      <div class="flex flex-wrap justify-start gap-2 mt-4">
+        <div
+          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+        >
+          <span>👂</span>
+          <span>Active Listener</span>
+        </div>
+        <div
+          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+        >
+          <span>🕺🏻</span>
+          <span>Confident</span>
+        </div>
+        <div
+          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+        >
+          <span>❤️</span>
+          <span>Empathetic</span>
+        </div>
+        <div
+          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+        >
+          <span>😌</span>
+          <span>Patient</span>
+        </div>
+        <div
+          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+        >
+          <span>🙌</span>
+          <span>Respectful</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education & Career Timeline -->
+    <div class="p-8 max-w-lg w-full mx-auto mt-10 relative overflow-hidden">
+      <h3 class="text-xl font-bold text-gray-800 border-b pb-4">
+        Education & Career
+      </h3>
+      <div class="relative border-l-4 border-gray-300 mt-6 pl-6 space-y-8">
+        <!-- Bachelor's Degree -->
+        <div class="relative">
+          <div
+            class="absolute -left-8 top-2 w-6 h-6 bg-gray-500 text-gray-700 rounded-full border-2 border-white"
+          ></div>
+          <p class="text-lg font-semibold">BSc in Computer Science</p>
+          <p class="text-sm text-gray-500">BRAC University | 2015 - 2020</p>
+        </div>
+
+        <!-- Work Experience -->
+        <div class="relative">
+          <div
+            class="absolute -left-8 top-2 w-6 h-6 bg-gray-600 text-gray-700 rounded-full border-2 border-white"
+          ></div>
+          <p class="text-lg font-semibold">Software Engineer</p>
+          <p class="text-sm text-gray-500">
+            Rainier Technologies | 2020 - 2022
+          </p>
+        </div>
+
+        <!-- Master's Degree -->
+        <div class="relative">
+          <div
+            class="absolute -left-8 top-2 w-6 h-6 bg-gray-600 text-gray-700 rounded-full border-2 border-white"
+          ></div>
+          <p class="text-lg font-semibold">
+            MEng in Quality Systems Engineering
+          </p>
+          <p class="text-sm text-gray-500">
+            Concordia University | 2023 - 2024
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Language and Ethnicity -->
+    <div class="p-8 max-w-lg w-full mx-auto mt-10">
+      <h3 class="text-xl font-bold text-gray-800 border-b pb-2">
+        Language and Ethnicity
+      </h3>
+      <div class="flex flex-wrap justify-start gap-2 mt-4">
+        <div
+          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+        >
+          <img src="./svg/bangladesh.svg" alt="bangladesh" class="w-5 h-5" />
+          <span>Bangladeshi</span>
+        </div>
+        <div
+          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+        >
+          <img src="./svg/language.svg" alt="language" class="w-5 h-5" />
+          <span>Bengali</span>
+        </div>
+        <div
+          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+        >
+          <img src="./svg/language.svg" alt="language" class="w-5 h-5" />
+          <span>English</span>
+        </div>
+        <div
+          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+        >
+          <img src="./svg/bangladesh.svg" alt="bangladesh" class="w-5 h-5" />
+          <span>Grew up in Bangladesh</span>
+        </div>
+      </div>
+    </div>
+    <!-- Additional Photo Section (Full Width) -->
+    <div class="mt-10 w-full">
+      <img
+        src="./imgs/image-5.png"
+        alt="image-5"
+        class="w-full h-auto object-cover"
+      />
+    </div>
+    <!-- Bio Section -->
+    <div class="p-8 max-w-lg w-full mx-auto mt-10">
+      <h3 class="text-xl font-bold text-gray-800 border-b pb-2">Bio</h3>
+      <p class="mt-4 text-gray-700 leading-relaxed">
+        I’m a software engineer passionate about technology, creativity, and
+        meaningful connections. I value faith, family, and personal growth. When
+        I’m not coding, you’ll find me exploring photography, cooking up new
+        recipes, or planning the next travel adventure. I’m grounded in my
+        values and looking for someone to share the journey ahead with.
+      </p>
+    </div>
+    <!-- Family Section - Scroll Snap with Dots -->
+    <div class="p-8 max-w-2xl w-full mx-auto mt-10">
+      <h3 class="text-xl font-bold text-gray-800 border-b pb-2">Family</h3>
+
+      <!-- Scrollable Cards -->
+      <div
+        id="family-carousel"
+        class="mt-6 flex overflow-x-auto scroll-smooth snap-x snap-mandatory space-x-4 scrollbar-hide"
+      >
+        <!-- Mother Card -->
+        <div
+          class="snap-center flex-shrink-0 w-full max-w-sm rounded-lg shadow-md overflow-hidden relative"
+        >
+          <img
+            src="./imgs/mother.png"
+            alt="mother"
+            class="w-full h-[300px] object-cover"
+          />
+          <div
+            class="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white p-4"
+          >
+            <p class="text-lg font-semibold">Mother</p>
+            <p class="text-sm">Roohi Rahman</p>
+            <p class="text-xs text-gray-300">Retired Additional Secretary</p>
+          </div>
+        </div>
+        <!-- Father Card -->
+        <div
+          class="snap-center flex-shrink-0 w-full max-w-sm rounded-lg shadow-md overflow-hidden relative"
+        >
+          <img
+            src="./imgs/father.JPG"
+            alt="father"
+            class="w-full h-[300px] object-cover"
+          />
+          <div
+            class="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white p-4"
+          >
+            <p class="text-lg font-semibold">Late Father</p>
+            <p class="text-sm">Dr. Aminur Rashid Minu</p>
+            <p class="text-xs text-gray-300">General & Laparoscopic Surgeon</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Dots -->
+      <div class="flex justify-center mt-4 space-x-2" id="family-dots">
+        <span
+          class="dot w-3 h-3 bg-gray-800 rounded-full transition duration-300"
+        ></span>
+        <span
+          class="dot w-3 h-3 bg-gray-400 rounded-full transition duration-300"
+        ></span>
+      </div>
+    </div>
+
+    <!-- Ice Breaker Questions Section -->
+    <div class="p-8 max-w-lg w-full mx-auto mt-10">
+      <h3 class="text-2xl font-bold text-gray-800 border-b pb-2">
+        Ice Breaker Questions
+      </h3>
+
+      <!-- Swipe Container -->
+      <div
+        id="question-track"
+        class="mt-6 flex overflow-x-auto snap-x snap-mandatory scroll-smooth space-x-4 scrollbar-hide"
+      >
+        <!-- Dynamically Loaded Cards -->
+        <div
+          class="question-card snap-center flex-shrink-0 w-full bg-gray-200 p-6 rounded-xl shadow-lg"
+        >
+          <p class="text-lg font-semibold text-gray-600">
+            If we had 24 hours to explore a city, where would we go and what
+            would we do?
+          </p>
+        </div>
+
+        <div
+          class="question-card snap-center flex-shrink-0 w-full bg-gray-200 p-6 rounded-xl shadow-lg"
+        >
+          <p class="text-lg font-semibold text-gray-600">
+            What's a movie or book you think I absolutely must experience?
+          </p>
+        </div>
+
+        <div
+          class="question-card snap-center flex-shrink-0 w-full bg-gray-200 p-6 rounded-xl shadow-lg"
+        >
+          <p class="text-lg font-semibold text-gray-600">
+            What’s a favorite Quranic verse or hadith that resonates with you?
+          </p>
+        </div>
+
+        <div
+          class="question-card snap-center flex-shrink-0 w-full bg-gray-200 p-6 rounded-xl shadow-lg"
+        >
+          <p class="text-lg font-semibold text-gray-600">
+            How do you balance deen and dunya in your life?
+          </p>
+        </div>
+      </div>
+
+      <!-- Scroll Dots -->
+      <div class="flex justify-center mt-4 space-x-2" id="question-dots">
+        <span
+          class="dot w-3 h-3 bg-gray-400 rounded-full transition duration-300"
+        ></span>
+        <span
+          class="dot w-3 h-3 bg-gray-400 rounded-full transition duration-300"
+        ></span>
+        <span
+          class="dot w-3 h-3 bg-gray-400 rounded-full transition duration-300"
+        ></span>
+        <span
+          class="dot w-3 h-3 bg-gray-400 rounded-full transition duration-300"
+        ></span>
+      </div>
+    </div>
+
+    <!-- Connect With Me Section -->
+    <div class="p-8 max-w-lg w-full mx-auto mt-10 text-center">
+      <h3 class="text-xl font-bold text-gray-800 border-b pb-2">
+        Connect With Me
+      </h3>
+      <div class="flex justify-center gap-4 mt-4">
+        <a href="https://www.facebook.com/Iktisad" class="w-16 h-16"
+          ><img src="./svg/facebook.svg" alt="facebook"
+        /></a>
+        <a href="https://www.instagram.com/iktisad_rashid/" class="w-16 h-16"
+          ><img src="./svg/instagram.svg" alt="instagram"
+        /></a>
+        <a href="https://www.linkedin.com/in/iktisad-rashid/" class="w-16 h-16"
+          ><img src="./svg/linkedin.svg" alt="linkedin"
+        /></a>
+        <a href="https://github.com/Iktisad" class="w-16 h-16"
+          ><img src="./svg/github.svg" alt="github"
+        /></a>
+      </div>
+    </div>
+  </body>
+  <!-- Scroll Dot Script -->
+  <script>
+    // Family Carousel Scroll Logic
+    const carousel = document.getElementById("family-carousel");
+    const dots = document.querySelectorAll("#family-dots .dot");
+
+    carousel.addEventListener("scroll", () => {
+      const scrollLeft = carousel.scrollLeft;
+      const width = carousel.offsetWidth;
+      const activeIndex = Math.round(scrollLeft / width);
+
+      dots.forEach((dot, idx) => {
+        dot.classList.toggle("bg-gray-800", idx === activeIndex);
+        dot.classList.toggle("bg-gray-400", idx !== activeIndex);
+      });
+    });
+
+    // Ice Breaker Questions Scroll Logic
+    const questionCarousel = document.getElementById("question-track");
+    const questionDots = document.querySelectorAll("#question-dots .dot");
+
+    questionCarousel.addEventListener("scroll", () => {
+      const scrollLeft = questionCarousel.scrollLeft;
+      const width = questionCarousel.offsetWidth;
+      const activeIndex = Math.round(scrollLeft / width);
+
+      questionDots.forEach((dot, idx) => {
+        dot.classList.toggle("bg-gray-800", idx === activeIndex);
+        dot.classList.toggle("bg-gray-400", idx !== activeIndex);
+      });
+    });
+    // Replace this with your actual birthdate (YYYY-MM-DD)
+    const birthDate = new Date("1995-10-30");
+
+    const today = new Date();
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const hasBirthdayPassed =
+      today.getMonth() > birthDate.getMonth() ||
+      (today.getMonth() === birthDate.getMonth() &&
+        today.getDate() >= birthDate.getDate());
+
+    if (!hasBirthdayPassed) age--;
+
+    document.getElementById("age").textContent = `• ${age} Years`;
+  </script>
+</html>
