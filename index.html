@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Iktisad's Biodata Profile</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <link rel="stylesheet" href="./src/output.css" /> -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="./src/output.css" />
     <style>
       .scrollbar-hide::-webkit-scrollbar {
         display: none;
@@ -17,50 +17,47 @@
     </style>
   </head>
   <body class="bg-gray-100 min-h-screen">
-    <!-- Full-Screen Background Image -->
-    <div
-      class="relative w-full h-screen bg-cover bg-center"
-      style="background-image: url('./imgs/image-1.png')"
-    >
-      <!-- Profile Details inside Translucent Pills -->
-      <div class="absolute bottom-6 left-6 z-10 space-y-2">
-        <div
-          class="bg-gray-800 bg-opacity-50 text-white px-3 py-1.5 rounded-full text-base font-bold shadow-md"
-        >
-          Iktisad Rashid <span id="age" class="font-normal text-sm"></span>
+   <!-- Full-Width Background Image -->
+<div class="relative w-full h-screen bg-cover bg-center" style="background-image: url('./imgs/image-1.png')">
+  
+  <!-- Content Wrapper (constrained on large screens) -->
+  <div class="absolute bottom-6 left-0 w-full px-4">
+    <div class="max-w-sm mx-auto space-y-2">
+      
+      <!-- Name + Age -->
+      <div class="bg-gray-800/50 px-3 py-1.5 rounded-full w-fit">
+        <span class="text-white text-lg font-bold shadow-md">Iktisad Rashid</span>
+        <span id="age" class="font-normal text-lg text-white"></span>
+      </div>
+
+      <!-- Location -->
+      <div class="bg-gray-800/50 text-white px-3 py-1.5 rounded-full text-sm font-medium shadow-md flex items-center gap-2 w-fit">
+        <img src="./svg/canada.svg" alt="canada" class="w-4 h-4" />
+        <span>Montreal</span>
+      </div>
+
+      <!-- Profession & Deen -->
+      <div class="flex space-x-2">
+        <div class="bg-gray-800/50 text-white px-3 py-1.5 rounded-full text-sm font-medium shadow-md flex items-center gap-2 w-fit">
+          <img src="./svg/work.svg" alt="work" class="w-4 h-4" />
+          <span>Software Engineer</span>
         </div>
-
-        <div
-          class="bg-gray-800 bg-opacity-50 text-white px-3 py-1.5 rounded-full text-sm font-medium shadow-md flex items-center gap-2 w-fit"
-        >
-          <img src="./svg/canada.svg" alt="canada" class="w-4 h-4" />
-          <span>Montreal</span>
-        </div>
-
-        <div class="flex space-x-2">
-          <div
-            class="bg-gray-800 bg-opacity-50 text-white px-3 py-1.5 rounded-full text-sm font-medium shadow-md flex items-center gap-2 w-fit"
-          >
-            <img src="./svg/work.svg" alt="work" class="w-4 h-4" />
-            <span>Software Engineer</span>
-          </div>
-
-          <div
-            class="bg-gray-800 bg-opacity-50 text-white px-3 py-1.5 rounded-full text-sm font-medium shadow-md flex items-center gap-2 w-fit"
-          >
-            <img src="./svg/halfmoon.svg" alt="halfmoon" class="w-4 h-4" />
-            <span>Practicing</span>
-          </div>
-        </div>
-
-        <div
-          class="bg-gray-800 bg-opacity-50 text-white px-3 py-1.5 rounded-full text-sm font-medium shadow-md flex items-center gap-2 w-fit"
-        >
-          <img src="./svg/bangladesh.svg" alt="bangladesh" class="w-4 h-4" />
-          <span>Bangladeshi</span>
+        <div class="bg-gray-800/50 text-white px-3 py-1.5 rounded-full text-sm font-medium shadow-md flex items-center gap-2 w-fit">
+          <img src="./svg/halfmoon.svg" alt="halfmoon" class="w-4 h-4" />
+          <span>Practicing</span>
         </div>
       </div>
+
+      <!-- Ethnicity -->
+      <div class="bg-gray-800/50 text-white px-3 py-1.5 rounded-full text-sm font-medium shadow-md flex items-center gap-2 w-fit">
+        <img src="./svg/bangladesh.svg" alt="bangladesh" class="w-4 h-4" />
+        <span>Bangladeshi</span>
+      </div>
     </div>
+  </div>
+
+</div>
+
 
     <!-- Quotation Banner Section -->
     <div class="p-8 max-w-2xl w-full mx-auto mt-4">
@@ -79,22 +76,24 @@
 
     <!-- About Me Section with Left-Aligned Pills (No Card) -->
     <div class="p-8 max-w-lg w-full mx-auto mt-10 relative overflow-hidden">
-      <h3 class="text-xl font-bold text-gray-700 border-b pb-2">About Me</h3>
+      <h3 class="text-xl font-bold text-gray-700 border-b border-gray-300 pb-2">
+        About Me
+      </h3>
       <div class="flex flex-wrap justify-start gap-2 mt-4">
         <div
-          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+          class="bg-gray-300/50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
         >
           <img src="./svg/height.svg" alt="height" class="w-5 h-5" />
           <span>168cm(5'6")</span>
         </div>
         <div
-          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+          class="bg-gray-300/50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
         >
           <img src="./svg/ring.svg" alt="ring" class="w-5 h-5" />
           <span>Never Married</span>
         </div>
         <div
-          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+          class="bg-gray-300/50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
         >
           <img
             src="./svg/hijri-calendar.svg"
@@ -104,7 +103,7 @@
           <span>Muslim</span>
         </div>
         <div
-          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+          class="bg-gray-300/50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
         >
           <img src="./svg/child.svg" alt="child" class="w-5 h-5" />
           <span>Doesn't have children</span>
@@ -119,91 +118,104 @@
       <h3 class="text-xl font-bold text-gray-800 mb-4">Marriage Intentions</h3>
 
       <div class="relative flex flex-col items-center">
+        <!-- Progress Bar -->
         <div class="w-full h-1 bg-gray-300 rounded-full relative">
           <div
             class="absolute left-0 h-1 bg-gradient-to-r from-pink-500 to-black rounded-full w-2/5"
           ></div>
         </div>
-        <div class="flex justify-between items-center w-full mt-3">
-          <div class="text-center flex flex-col items-center">
+
+        <!-- Timeline Steps (condensed layout) -->
+        <div class="flex justify-between items-center w-full mt-3 text-center">
+          <!-- Match -->
+          <div class="flex flex-col items-center space-y-1">
             <div
-              class="bg-pink-500 text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center space-x-2"
+              class="bg-pink-500 text-white px-2 py-1 rounded-full text-xs font-medium flex items-center gap-1 shadow"
             >
-              <img src="./svg/heart.svg" alt="match" class="w-5 h-5" />
+              <img src="./svg/heart.svg" alt="match" class="w-4 h-4" />
               <span>Match</span>
             </div>
-            <p class="text-gray-500 text-xs mt-1">Starting Point</p>
+            <p class="text-gray-500 text-[11px]">Start</p>
           </div>
-          <div class="text-center flex flex-col items-center">
+
+          <!-- Chatting -->
+          <div class="flex flex-col items-center space-y-1">
             <div
-              class="bg-black text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center space-x-2"
+              class="bg-black text-white px-2 py-1 rounded-full text-xs font-medium flex items-center gap-1 shadow"
             >
-              <img src="./svg/messages.svg" alt="messages" class="w-5 h-5" />
+              <img src="./svg/messages.svg" alt="chat" class="w-4 h-4" />
               <span>Chatting</span>
             </div>
-            <p class="text-gray-500 text-xs mt-1">1-2 months</p>
+            <p class="text-gray-500 text-[11px]">1–2 mo</p>
           </div>
-          <div class="text-center flex flex-col items-center">
+
+          <!-- Family -->
+          <div class="flex flex-col items-center space-y-1">
             <div
-              class="bg-black text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center space-x-2"
+              class="bg-black text-white px-2 py-1 rounded-full text-xs font-medium flex items-center gap-1 shadow"
             >
-              <img src="./svg/parents.svg" alt="parents" class="w-5 h-5" />
+              <img src="./svg/parents.svg" alt="family" class="w-4 h-4" />
               <span>Family</span>
             </div>
-            <p class="text-gray-500 text-xs mt-1">Agree together</p>
+            <p class="text-gray-500 text-[11px]">Agree</p>
           </div>
-          <div class="text-center flex flex-col items-center">
+
+          <!-- Marriage -->
+          <div class="flex flex-col items-center space-y-1">
             <div
-              class="bg-black text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center space-x-2"
+              class="bg-black text-white px-2 py-1 rounded-full text-xs font-medium flex items-center gap-1 shadow"
             >
               <img src="./svg/marriage.svg" alt="marriage" class="w-4 h-4" />
               <span>Marriage</span>
             </div>
-            <p class="text-gray-500 text-xs mt-1">1-2 years</p>
+            <p class="text-gray-500 text-[11px]">1–2 yr</p>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Additional Photo Section (Full Width) -->
-    <div class="mt-10 w-full">
-      <img
-        src="./imgs/image-2.jpg"
-        alt="image-2"
-        class="w-full h-auto object-cover"
-      />
-    </div>
-
+    <!-- Additional Photo Section (Sticks to Layout Width) -->
+   
+      <div class="mt-10 max-w-lg w-full md:mx-auto">
+        <img
+          src="./imgs/image-2.jpg"
+          alt="image-2"
+          class="w-full h-auto object-cover md:rounded-lg"
+        />
+      </div>
+   
     <!-- Religiosity -->
     <div class="p-8 max-w-lg w-full mx-auto mt-10">
-      <h3 class="text-xl font-bold text-gray-800 border-b pb-2">Religiosity</h3>
+      <h3 class="text-xl font-bold text-gray-800 border-b border-gray-300 pb-2">
+        Religiosity
+      </h3>
       <div class="flex flex-wrap justify-start gap-2 mt-4">
         <div
-          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+          class="bg-gray-300/50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
         >
           <img src="./svg/halfmoon-2.svg" alt="halfmoon-2" class="w-5 h-5" />
           <span>Practicing</span>
         </div>
         <div
-          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+          class="bg-gray-300/50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
         >
           <img src="./svg/hands.svg" alt="hands" class="w-5 h-5" />
           <span>Always prays</span>
         </div>
         <div
-          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+          class="bg-gray-300/50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
         >
           <img src="./svg/food.svg" alt="food" class="w-5 h-5" />
           <span>Only Eats Halal</span>
         </div>
         <div
-          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+          class="bg-gray-300/50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
         >
           <img src="./svg/smoking.svg" alt="smoking" class="w-5 h-5" />
           <span>Non-Smoker</span>
         </div>
         <div
-          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+          class="bg-gray-300/50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
         >
           <img src="./svg/alcohol.svg" alt="alcohol" class="w-5 h-5" />
           <span>Doesn't drink</span>
@@ -212,34 +224,34 @@
     </div>
 
     <!-- Additional Photo Section (Full Width) -->
-    <div class="mt-10 w-full">
+    <div class="mt-10 max-w-lg w-full md:mx-auto">
       <img
         src="./imgs/image-3.png"
         alt="image-3"
-        class="w-full h-auto object-cover"
+        class="w-full h-auto object-cover md:rounded-lg"
       />
     </div>
 
     <!-- Future Plans -->
     <div class="p-8 max-w-lg w-full mx-auto mt-10">
-      <h3 class="text-xl font-bold text-gray-800 border-b pb-2">
+      <h3 class="text-xl font-bold text-gray-800 border-b border-gray-300 pb-2">
         Future Plans
       </h3>
       <div class="flex flex-wrap justify-start gap-2 mt-4">
         <div
-          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+          class="bg-gray-300/50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
         >
           <img src="./svg/child.svg" alt="child" class="w-5 h-5" />
           <span>Wants children</span>
         </div>
         <div
-          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+          class="bg-gray-300/50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
         >
           <img src="./svg/plane.svg" alt="plane" class="w-5 h-5" />
           <span>Will move abroad</span>
         </div>
         <div
-          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+          class="bg-gray-300/50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
         >
           <img src="./svg/home.svg" alt="home" class="w-5 h-5" />
           <span>Will get our own place</span>
@@ -247,62 +259,64 @@
       </div>
     </div>
     <!-- Additional Photo Section (Full Width) -->
-    <div class="mt-10 w-full">
+    <div class="mt-10 max-w-lg w-full md:mx-auto">
       <img
         src="./imgs/image-4.png"
         alt="image-4"
-        class="w-full h-auto object-cover"
+        class="w-full h-auto object-cover md:rounded-lg"
       />
     </div>
 
     <!-- Interests -->
     <div class="p-8 max-w-lg w-full mx-auto mt-10">
-      <h3 class="text-xl font-bold text-gray-800 border-b pb-2">Interests</h3>
+      <h3 class="text-xl font-bold text-gray-800 border-b border-gray-300 pb-2">
+        Interests
+      </h3>
       <div class="flex flex-wrap justify-start gap-2 mt-4">
         <div
-          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+          class="bg-gray-300/50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
         >
           <span>🍿</span>
           <span>Anime</span>
         </div>
         <div
-          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+          class="bg-gray-300/50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
         >
           <span>👨‍💻</span>
           <span>Coding</span>
         </div>
         <div
-          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+          class="bg-gray-300/50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
         >
           <span>👨‍🍳</span>
           <span>Cooking</span>
         </div>
         <div
-          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+          class="bg-gray-300/50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
         >
           <span>💻</span>
           <span>Tech</span>
         </div>
         <div
-          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+          class="bg-gray-300/50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
         >
           <span>🧠</span>
           <span>Politics</span>
         </div>
         <div
-          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+          class="bg-gray-300/50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
         >
           <span>🥾</span>
           <span>Hiking</span>
         </div>
         <div
-          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+          class="bg-gray-300/50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
         >
           <span>👾</span>
           <span>Video Games</span>
         </div>
         <div
-          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+          class="bg-gray-300/50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
         >
           <span>🥋</span>
           <span>Martial Arts</span>
@@ -311,34 +325,36 @@
     </div>
     <!-- Personality -->
     <div class="p-8 max-w-lg w-full mx-auto mt-10">
-      <h3 class="text-xl font-bold text-gray-800 border-b pb-2">Personality</h3>
+      <h3 class="text-xl font-bold text-gray-800 border-b border-gray-300 pb-2">
+        Personality
+      </h3>
       <div class="flex flex-wrap justify-start gap-2 mt-4">
         <div
-          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+          class="bg-gray-300/50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
         >
           <span>👂</span>
           <span>Active Listener</span>
         </div>
         <div
-          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+          class="bg-gray-300/50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
         >
           <span>🕺🏻</span>
           <span>Confident</span>
         </div>
         <div
-          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+          class="bg-gray-300/50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
         >
           <span>❤️</span>
           <span>Empathetic</span>
         </div>
         <div
-          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+          class="bg-gray-300/50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
         >
           <span>😌</span>
           <span>Patient</span>
         </div>
         <div
-          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+          class="bg-gray-300/50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
         >
           <span>🙌</span>
           <span>Respectful</span>
@@ -348,7 +364,7 @@
 
     <!-- Education & Career Timeline -->
     <div class="p-8 max-w-lg w-full mx-auto mt-10 relative overflow-hidden">
-      <h3 class="text-xl font-bold text-gray-800 border-b pb-4">
+      <h3 class="text-xl font-bold text-gray-800 border-b border-gray-300 pb-4">
         Education & Career
       </h3>
       <div class="relative border-l-4 border-gray-300 mt-6 pl-6 space-y-8">
@@ -389,30 +405,30 @@
 
     <!-- Language and Ethnicity -->
     <div class="p-8 max-w-lg w-full mx-auto mt-10">
-      <h3 class="text-xl font-bold text-gray-800 border-b pb-2">
+      <h3 class="text-xl font-bold text-gray-800 border-b border-gray-300 pb-2">
         Language and Ethnicity
       </h3>
       <div class="flex flex-wrap justify-start gap-2 mt-4">
         <div
-          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+          class="bg-gray-300/50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
         >
           <img src="./svg/bangladesh.svg" alt="bangladesh" class="w-5 h-5" />
           <span>Bangladeshi</span>
         </div>
         <div
-          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+          class="bg-gray-300/50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
         >
           <img src="./svg/language.svg" alt="language" class="w-5 h-5" />
           <span>Bengali</span>
         </div>
         <div
-          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+          class="bg-gray-300/50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
         >
           <img src="./svg/language.svg" alt="language" class="w-5 h-5" />
           <span>English</span>
         </div>
         <div
-          class="bg-gray-300 bg-opacity-50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
+          class="bg-gray-300/50 text-gray-600 px-3 py-2 rounded-full text-sm font-semibold shadow-md flex items-center space-x-2"
         >
           <img src="./svg/bangladesh.svg" alt="bangladesh" class="w-5 h-5" />
           <span>Grew up in Bangladesh</span>
@@ -420,16 +436,18 @@
       </div>
     </div>
     <!-- Additional Photo Section (Full Width) -->
-    <div class="mt-10 w-full">
+    <div class="mt-10 max-w-lg w-full md:mx-auto">
       <img
         src="./imgs/image-5.png"
         alt="image-5"
-        class="w-full h-auto object-cover"
+        class="w-full h-auto object-cover md:rounded-lg"
       />
     </div>
     <!-- Bio Section -->
     <div class="p-8 max-w-lg w-full mx-auto mt-10">
-      <h3 class="text-xl font-bold text-gray-800 border-b pb-2">Bio</h3>
+      <h3 class="text-xl font-bold text-gray-800 border-b border-gray-300 pb-2">
+        Bio
+      </h3>
       <p class="mt-4 text-gray-700 leading-relaxed">
         I’m a software engineer passionate about technology, creativity, and
         meaningful connections. I value faith, family, and personal growth. When
@@ -440,7 +458,9 @@
     </div>
     <!-- Family Section - Scroll Snap with Dots -->
     <div class="p-8 max-w-2xl w-full mx-auto mt-10">
-      <h3 class="text-xl font-bold text-gray-800 border-b pb-2">Family</h3>
+      <h3 class="text-xl font-bold text-gray-800 border-b border-gray-300 pb-2">
+        Family
+      </h3>
 
       <!-- Scrollable Cards -->
       <div
@@ -457,7 +477,7 @@
             class="w-full h-[300px] object-cover"
           />
           <div
-            class="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white p-4"
+            class="absolute bottom-0 left-0 w-full bg-black/60 text-white p-4"
           >
             <p class="text-lg font-semibold">Mother</p>
             <p class="text-sm">Roohi Rahman</p>
@@ -474,7 +494,7 @@
             class="w-full h-[300px] object-cover"
           />
           <div
-            class="absolute bottom-0 left-0 w-full bg-black bg-opacity-60 text-white p-4"
+            class="absolute bottom-0 left-0 w-full bg-black/60 text-white p-4"
           >
             <p class="text-lg font-semibold">Late Father</p>
             <p class="text-sm">Dr. Aminur Rashid Minu</p>
@@ -496,7 +516,9 @@
 
     <!-- Ice Breaker Questions Section -->
     <div class="p-8 max-w-lg w-full mx-auto mt-10">
-      <h3 class="text-2xl font-bold text-gray-800 border-b pb-2">
+      <h3
+        class="text-2xl font-bold text-gray-800 border-b border-gray-300 pb-2"
+      >
         Ice Breaker Questions
       </h3>
 
@@ -559,7 +581,7 @@
 
     <!-- Connect With Me Section -->
     <div class="p-8 max-w-lg w-full mx-auto mt-10 text-center">
-      <h3 class="text-xl font-bold text-gray-800 border-b pb-2">
+      <h3 class="text-xl font-bold text-gray-800 border-b border-gray-300 pb-2">
         Connect With Me
       </h3>
       <div class="flex justify-center gap-4 mt-4">
